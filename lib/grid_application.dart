@@ -91,6 +91,7 @@ class _GridApplicationState extends State<GridApplication> {
               ],
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
                   child: Center(
@@ -161,6 +162,7 @@ class _GridApplicationState extends State<GridApplication> {
               ],
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
                   child: Center(
