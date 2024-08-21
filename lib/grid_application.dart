@@ -34,6 +34,7 @@ class _GridApplicationState extends State<GridApplication> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   height: 180,
                   width: 180,
                   decoration: BoxDecoration(
@@ -49,6 +50,7 @@ class _GridApplicationState extends State<GridApplication> {
                           Icon(
                             Icons.calendar_month,
                             size: 55,
+                            
                           ),
                         ],
                       ),
@@ -64,6 +66,7 @@ class _GridApplicationState extends State<GridApplication> {
                   )),
                 ),
                 Container(
+                  margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
                   height: 180,
                   width: 180,
                   decoration: BoxDecoration(
@@ -119,8 +122,8 @@ class _GridApplicationState extends State<GridApplication> {
                   )),
                   height: 180,
                   width: 180,
-                  margin: EdgeInsets.all(10),
-                  padding: EdgeInsets.all(10),
+                  margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                  // padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadiusDirectional.circular(5),
                     color: Color.fromARGB(255, 253, 199, 255),
@@ -153,7 +156,7 @@ class _GridApplicationState extends State<GridApplication> {
                   height: 180,
                   width: 180,
                   margin: EdgeInsets.all(10),
-                  padding: EdgeInsets.all(10),
+                  // padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadiusDirectional.circular(5),
                     color: Color.fromARGB(255, 196, 255, 252),

@@ -5,6 +5,7 @@ import 'package:flutter_application_1/appbar1_screen.dart';
 import 'package:flutter_application_1/appbar_screen.dart';
 import 'package:flutter_application_1/grid_application.dart';
 import 'package:flutter_application_1/home_screen.dart';
+import 'package:flutter_application_1/new_app.dart';
 import 'package:flutter_application_1/new_application.dart';
 import 'package:flutter_application_1/screen1.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 118, 152, 255)),
         useMaterial3: true,
       ),
-      home: App(),
+      home: NewApp(),
     );
   }
 

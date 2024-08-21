@@ -82,7 +82,8 @@ class _NewApplicationState extends State<NewApplication> {
                     margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     height: 200,
                     width: 200,
-                    child: Icon(
+                    child: 
+                    Icon(
                       Icons.call,
                       size: 35,
                       shadows: [

@@ -35,16 +35,15 @@ class _AppState extends State<App> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  
                   Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                    height: 150,
-                    width: 150,
-                      child: Icon(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                    height: 100,
+                    width: 100,
+                    child: Icon(
                       Icons.sunny,
                       color: Colors.blue,
                     ),
-                     decoration: BoxDecoration(
+                    decoration: BoxDecoration(
                         color: Colors.yellow,
                         borderRadius: BorderRadius.circular(30),
                         border: Border(
@@ -52,11 +51,9 @@ class _AppState extends State<App> {
                           color: Colors.black,
                           width: 3,
                         ))),
-                   
+
                     // color: Colors.red,
-                   
                   )
-                  
                 ],
               ),
             ],
@@ -83,8 +80,6 @@ class _AppState extends State<App> {
                           color: Colors.black,
                           width: 3,
                         ))),
-
-                    
                   )
                 ],
               ),
