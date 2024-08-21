@@ -51,14 +51,22 @@ class _NewAppState extends State<NewApp> {
               Container(
                 height: 50,
                 width: 100,
-                color: Colors.blueAccent,
                 child: Icon(Icons.shopping_cart),
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(width: 2),
+                ),
               ),
               Container(
                 height: 50,
                 width: 100,
-                color: Colors.blueAccent,
                 child: Icon(Icons.wallet),
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(width: 2),
+                ),
               ),
             ],
           )
