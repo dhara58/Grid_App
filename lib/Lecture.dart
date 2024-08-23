@@ -57,8 +57,8 @@ class _LectureState extends State<Lecture> {
           ),
           Expanded(
             child: Container(
-              width: 100,
-              color: Colors.blueAccent,
+              width: 200,
+              color: Colors.cyan,
             ),
           ),
         ],
