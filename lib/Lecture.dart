@@ -15,6 +15,7 @@ class _LectureState extends State<Lecture> {
         backgroundColor: Colors.purpleAccent,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -43,6 +44,7 @@ class _LectureState extends State<Lecture> {
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Expanded(
                 child: Container(color: Colors.red, child: Text('data')),
