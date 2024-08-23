@@ -20,23 +20,28 @@ class _LectureState extends State<Lecture> {
             children: [
               Expanded(
                 child: Container(
+                  child: Center(
+                    child: Text(
+                      'hello',
+                      style: TextStyle(
+                          fontSize: 35,
+                          color: Colors.tealAccent,
+                          shadows: [
+                            Shadow(offset: Offset(6, 5), blurRadius: 6.00)
+                          ]),
+                    ),
+                  ),
                   height: 100,
                   color: Colors.amber,
                 ),
               ),
               Container(
                 height: 100,
-                width: 300,
+                width: 210,
                 color: Colors.pink,
               ),
             ],
           ),
-          // Expanded(
-          //   child: Container(
-          //     width: 100,
-          //     color: Colors.blueAccent,
-          //   ),
-          // ),
           Row(
             children: [
               Expanded(
@@ -44,8 +49,15 @@ class _LectureState extends State<Lecture> {
               ),
               Flexible(
                   child: Container(
-                      color: Colors.blueAccent, child: Text('hello world'))),
+                      color: Colors.greenAccent,
+                      child: Text('hello world sunshine darkness'))),
             ],
+          ),
+          Expanded(
+            child: Container(
+              width: 100,
+              color: Colors.blueAccent,
+            ),
           ),
         ],
       ),
