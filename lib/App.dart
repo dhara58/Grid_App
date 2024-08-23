@@ -21,6 +21,7 @@ class _AppState extends State<App> {
                     'web page',
                     style: TextStyle(
                       fontSize: 35,
+                      letterSpacing: 1,
                     ),
                   ),
                 ),
@@ -67,18 +68,24 @@ class _AppState extends State<App> {
                     margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                     height: 200,
                     width: 200,
-                    child: Icon(
-                      Icons.alarm,
-                      size: 20,
-                      color: Colors.purpleAccent,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.alarm,
+                          size: 20,
+                          color: Colors.purpleAccent,
+                        ),
+                      ],
                     ),
                     decoration: BoxDecoration(
                         color: Colors.yellow,
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius:
+                            BorderRadius.only(topLeft: Radius.circular(500)),
                         border: Border(
                             bottom: BorderSide(
+                          strokeAlign: BorderSide.strokeAlignOutside,
                           color: Colors.black,
-                          width: 3,
+                          width: 6,
                         ))),
                   )
                 ],
