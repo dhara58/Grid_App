@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/App.dart';
 import 'package:flutter_application_1/Lecture.dart';
+import 'package:flutter_application_1/Lecture1.dart';
 import 'package:flutter_application_1/appbar1_screen.dart';
 import 'package:flutter_application_1/appbar_screen.dart';
 import 'package:flutter_application_1/grid_application.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 118, 152, 255)),
         useMaterial3: true,
       ),
-      home: Lecture(),
+      home: Lecture1(),
     );
   }
 
