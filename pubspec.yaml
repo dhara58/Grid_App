@@ -75,7 +75,7 @@ flutter:
   fonts:
     - family: PlaywriteBEVLG
       fonts:
-        - asset: Font\PlaywriteBEVLG-Regular.ttf
+        - asset: Font\Lato-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

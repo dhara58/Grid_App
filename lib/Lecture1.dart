@@ -75,7 +75,7 @@ class _Lecture1State extends State<Lecture1> {
               Flexible(
                   child: Container(
                 height: 60,
-                width: 50,
+                width: 55,
                 child: Container(
                   child: Text('Flexible(fit:Flexfit.loo)'),
                 ),
