@@ -73,7 +73,7 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: PlaywriteBEVLG
+    - family: Lato
       fonts:
         - asset: Font\Lato-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf

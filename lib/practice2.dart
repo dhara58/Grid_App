@@ -16,7 +16,34 @@ class _Practice2State extends State<Practice2> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset('Font/images/Rectangle 562.png'),
+              Stack(
+                children: [
+                  Image.asset('Font/images/Rectangle 562.png'),
+                  Positioned(
+                    top: 24.49,
+                    left: 20,
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  Positioned(
+                    top: 19.49,
+                    right: 24.29,
+                    child: Container(
+                      height: 34,
+                      width: 34,
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 90, 90, 90),
+                          shape: BoxShape.circle),
+                      child: Icon(
+                        Icons.favorite,
+                        color: Color(0xffC38F7D),
+                      ),
+                    ),
+                  )
+                ],
+              ),
               SizedBox(
                 height: 22.04,
               ),
