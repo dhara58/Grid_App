@@ -19,7 +19,7 @@ class _Practice2State extends State<Practice2> {
               Stack(
                 children: [
                   Image.asset('Font/images/Rectangle 562.png'),
-                  Positioned(
+                  const Positioned(
                     top: 24.49,
                     left: 20,
                     child: Icon(
@@ -36,7 +36,7 @@ class _Practice2State extends State<Practice2> {
                       decoration: BoxDecoration(
                           color: Color.fromARGB(255, 90, 90, 90),
                           shape: BoxShape.circle),
-                      child: Icon(
+                      child: const Icon(
                         Icons.favorite,
                         color: Color(0xffC38F7D),
                       ),
@@ -44,7 +44,7 @@ class _Practice2State extends State<Practice2> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 22.04,
               ),
               Padding(
@@ -55,7 +55,7 @@ class _Practice2State extends State<Practice2> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
@@ -97,27 +97,32 @@ class _Practice2State extends State<Practice2> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Text(
                           '(15,582 Reviews)',
-                          style:
-                              TextStyle(fontSize: 10, color: Color(0xff636363)),
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Color(0xff636363),
+                          ),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 35,
                     ),
-                    Text(
+                    const Text(
                       'Select Your Size',
-                      style: TextStyle(fontSize: 14, color: Color(0xff404040)),
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xff404040),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15.72,
                     ),
                     Row(
@@ -142,7 +147,7 @@ class _Practice2State extends State<Practice2> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
@@ -165,7 +170,7 @@ class _Practice2State extends State<Practice2> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
@@ -178,7 +183,7 @@ class _Practice2State extends State<Practice2> {
                               Radius.circular(2),
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               'L',
                               style: TextStyle(
@@ -188,7 +193,7 @@ class _Practice2State extends State<Practice2> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
@@ -201,7 +206,7 @@ class _Practice2State extends State<Practice2> {
                               Radius.circular(2),
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               'XL',
                               style: TextStyle(
@@ -211,7 +216,7 @@ class _Practice2State extends State<Practice2> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 53.27,
                         ),
                         Container(
@@ -223,7 +228,7 @@ class _Practice2State extends State<Practice2> {
                               Radius.circular(2),
                             ),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               '+ | 1 | -',
                               style: TextStyle(
@@ -235,7 +240,7 @@ class _Practice2State extends State<Practice2> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.04,
                     ),
                     Text(
@@ -245,26 +250,33 @@ class _Practice2State extends State<Practice2> {
                           color: Color(0xff404040),
                           fontFamily: 'Lato'),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15.49,
                     ),
-                    Text(
-                      'Lorem lpsum is simply dummy text of the printing and typesetting industry.Lorem lpsum has been the industrys standerd dummy text sver since.Read More',
-                      style: TextStyle(
-                        fontSize: 12,
+                    RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Read More',
+                            style: TextStyle(fontSize: 15, color: Colors.brown),
+                          ),
+                        ],
+                        text:
+                            "Lorem lpsum is simply dummy text of the printing and typesetting industry.Lorem lpsum has been the industrys standerd dummy text sver since.",
+                        style: TextStyle(fontSize: 13, color: Colors.black),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.27,
                     ),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           '\$599',
                           style:
                               TextStyle(fontSize: 20, color: Color(0xffC38F7D)),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15.5,
                         ),
                         Container(
@@ -280,13 +292,14 @@ class _Practice2State extends State<Practice2> {
                               ),
                             ],
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               'Shop Now',
                               style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w500,
-                                  color: Color(0xff070707)),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xff070707),
+                              ),
                             ),
                           ),
                         ),
