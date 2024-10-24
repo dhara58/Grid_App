@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/practice10.dart';
 
 class Practice17 extends StatefulWidget {
   const Practice17({super.key});
@@ -65,7 +66,7 @@ class _Practice17State extends State<Practice17> {
             height: 32,
           ),
           Container(
-            height: 396,
+            height: 430,
             width: 327,
             color: Color(0xffFFFFFF),
             child: Column(
@@ -179,7 +180,7 @@ class _Practice17State extends State<Practice17> {
                   height: 16,
                 ),
                 Container(
-                  height: 152,
+                  height: 200,
                   width: 287,
                   child: Padding(
                     padding: const EdgeInsets.only(top: 16.0),
@@ -205,11 +206,17 @@ class _Practice17State extends State<Practice17> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(
-                            child: Text(
-                              'Log in',
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Color(0xffFFFFFF),
+                            child: TextButton(
+                              onPressed: () {},
+                              child: GestureDetector(
+                                onTap: () {},
+                                child: Text(
+                                  'Log in',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color(0xffFFFFFF),
+                                  ),
+                                ),
                               ),
                             ),
                           ),
@@ -217,13 +224,35 @@ class _Practice17State extends State<Practice17> {
                         SizedBox(
                           height: 16,
                         ),
-                        Text(
-                          'Sign up',
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Color(0xff303030),
+                        Container(
+                          height: 40,
+                          width: 287,
+                          child: Center(
+                            child: TextButton(
+                              onPressed: () {},
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.pop(context);
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return Practice10();
+                                      },
+                                    ),
+                                  );
+                                },
+                                child: Text(
+                                  'Sign up',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color(0xff303030),
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

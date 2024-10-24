@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/practice11.dart';
+import 'package:flutter_application_1/practice17.dart';
 
 class Practice10 extends StatefulWidget {
   const Practice10({super.key});
@@ -85,7 +86,7 @@ class _Practice10State extends State<Practice10> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return Practice11();
+                                      return Practice17();
                                     },
                                   ),
                                 );
