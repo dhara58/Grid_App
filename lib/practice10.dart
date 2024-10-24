@@ -80,10 +80,15 @@ class _Practice10State extends State<Practice10> {
                             onPressed: () {},
                             child: GestureDetector(
                               onTap: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return Practice11();
-                                }));
+                                Navigator.pop(context);
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return Practice11();
+                                    },
+                                  ),
+                                );
                               },
                               child: Text(
                                 "Get Started",
