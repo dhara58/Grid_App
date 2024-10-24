@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/practice11.dart';
 
 class Practice10 extends StatefulWidget {
   const Practice10({super.key});
@@ -35,7 +38,6 @@ class _Practice10State extends State<Practice10> {
                     children: [
                       Text(
                         "MAKE YOUR",
-
                         style: TextStyle(
                           fontSize: 32,
                           color: Color(0xff242424),
@@ -74,12 +76,23 @@ class _Practice10State extends State<Practice10> {
                           ),
                         ),
                         child: Center(
-                          child: Text(
-                            "Get Started",
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                              color: Color(0xffFFFFFF),
+                          child: TextButton(
+                            onPressed: () {},
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return Practice11();
+                                }));
+                              },
+                              child: Text(
+                                "Get Started",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xffFFFFFF),
+                                ),
+                              ),
                             ),
                           ),
                         ),
