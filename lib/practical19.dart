@@ -52,6 +52,16 @@ class _Practical19State extends State<Practical19> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(
+            height: 32,
+          ),
+          Container(
+            height: 590,
+            width: 327,
+            decoration: BoxDecoration(
+              color: Color(0xffFFFFFF),
+            ),
+          ),
         ],
       ),
     );

@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 118, 152, 255)),
         useMaterial3: true,
       ),
-      home: Practice10(),
+      home: Practical19(),
     );
   }
 }
