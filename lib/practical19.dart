@@ -61,6 +61,235 @@ class _Practical19State extends State<Practical19> {
             decoration: BoxDecoration(
               color: Color(0xffFFFFFF),
             ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 40, left: 20, right: 20),
+                  child: Container(
+                    height: 66,
+                    width: 287,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(color: Color(0xffE0E0E0)),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        left: 15,
+                        top: 10,
+                        right: 10,
+                      ),
+                      child: Container(
+                        child: Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Name',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Color(0xff909090),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 7,
+                                ),
+                                Text(
+                                  'cr7',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color(0xff242424),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Spacer(),
+                            Expanded(child: Icon(Icons.keyboard_arrow_down)),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Container(
+                  height: 66,
+                  width: 287,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(color: Color(0xffE0E0E0)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      left: 15,
+                      top: 10,
+                      right: 10,
+                    ),
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Email',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Color(0xff909090),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 7,
+                              ),
+                              Text(
+                                'cr7@gmail.com',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xff242424),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Container(
+                  height: 66,
+                  width: 287,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(color: Color(0xffE0E0E0)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      left: 15,
+                      top: 10,
+                      right: 10,
+                    ),
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Password',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Color(0xff909090),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 7,
+                              ),
+                              Text(
+                                '*******',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xff242424),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Spacer(),
+                          Expanded(child: Icon(Icons.visibility)),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Container(
+                  height: 66,
+                  width: 287,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(color: Color(0xffE0E0E0)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      left: 15,
+                      top: 10,
+                      right: 10,
+                    ),
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Confirm Password',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Color(0xff909090),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 7,
+                              ),
+                              Text(
+                                '*******',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xff242424),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Spacer(),
+                          Expanded(child: Icon(Icons.visibility)),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 32,
+                ),
+                Container(
+                  height: 56,
+                  width: 287,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Color(0xff242424),
+                  ),
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {},
+                      child: GestureDetector(
+                        onTap: () {},
+                        child: Text(
+                          'Sign up',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Color(0xffFFFFFF),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Text(
+                  "Already have account?",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                )
+              ],
+            ),
           ),
         ],
       ),
