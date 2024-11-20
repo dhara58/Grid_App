@@ -56,7 +56,7 @@ class _Practical19State extends State<Practical19> {
             height: 32,
           ),
           Container(
-            height: 590,
+            height: 520,
             width: 327,
             decoration: BoxDecoration(
               color: Color(0xffFFFFFF),
@@ -103,7 +103,9 @@ class _Practical19State extends State<Practical19> {
                                 ),
                               ],
                             ),
-                            Spacer(),
+                            Spacer(
+                              flex: 3,
+                            ),
                             Expanded(child: Icon(Icons.keyboard_arrow_down)),
                           ],
                         ),
@@ -198,7 +200,9 @@ class _Practical19State extends State<Practical19> {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          Spacer(
+                            flex: 3,
+                          ),
                           Expanded(child: Icon(Icons.visibility)),
                         ],
                       ),
@@ -246,7 +250,9 @@ class _Practical19State extends State<Practical19> {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          Spacer(
+                            flex: 2,
+                          ),
                           Expanded(child: Icon(Icons.visibility)),
                         ],
                       ),
@@ -282,10 +288,24 @@ class _Practical19State extends State<Practical19> {
                 SizedBox(
                   height: 16,
                 ),
-                Text(
-                  "Already have account?",
-                  style: TextStyle(
-                    fontSize: 24,
+                RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Sign in',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xff303030),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                    text: "Already have account?",
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Color(0xff909090),
+                      fontWeight: FontWeight.w100,
+                    ),
                   ),
                 )
               ],

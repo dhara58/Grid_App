@@ -26,7 +26,7 @@ class _Practical25State extends State<Practical25> {
       body: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            childAspectRatio: 0.7,
+            childAspectRatio: 0.6,
             crossAxisSpacing: 10,
             mainAxisSpacing: 20,
           ),
@@ -41,7 +41,13 @@ class _Practical25State extends State<Practical25> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(text3[index]),
-                  Text(text2[index]),
+                  Text(
+                    text2[index],
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                  Expanded(child: Icon(Icons.favorite_rounded)),
                 ],
               ),
             );
