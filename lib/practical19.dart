@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/practice17.dart';
+import 'package:flutter_application_1/practice18.dart';
+import 'package:flutter_application_1/practice8.dart';
 
 class Practical19 extends StatefulWidget {
   const Practical19({super.key});
@@ -271,15 +274,17 @@ class _Practical19State extends State<Practical19> {
                   ),
                   child: Center(
                     child: TextButton(
-                      onPressed: () {},
-                      child: GestureDetector(
-                        onTap: () {},
-                        child: Text(
-                          'Sign up',
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Color(0xffFFFFFF),
-                          ),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return Practice8();
+                        }));
+                      },
+                      child: Text(
+                        'Sign up',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Color(0xffFFFFFF),
                         ),
                       ),
                     ),
@@ -288,26 +293,38 @@ class _Practical19State extends State<Practical19> {
                 SizedBox(
                   height: 16,
                 ),
-                RichText(
-                  text: TextSpan(
-                    children: [
-                      TextSpan(
-                        text: 'Sign in',
+                TextButton(
+                  onPressed: () {},
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return Practice17();
+                      }));
+                    },
+                    child: RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Sign in',
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Color(0xff303030),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                        text: "Already have account?",
                         style: TextStyle(
                           fontSize: 14,
-                          color: Color(0xff303030),
-                          fontWeight: FontWeight.bold,
+                          color: Color(0xff909090),
+                          fontWeight: FontWeight.w100,
                         ),
                       ),
-                    ],
-                    text: "Already have account?",
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Color(0xff909090),
-                      fontWeight: FontWeight.w100,
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),

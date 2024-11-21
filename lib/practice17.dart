@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/practical19.dart';
 import 'package:flutter_application_1/practice10.dart';
 
 class Practice17 extends StatefulWidget {
@@ -209,7 +210,16 @@ class _Practice17State extends State<Practice17> {
                             child: TextButton(
                               onPressed: () {},
                               child: GestureDetector(
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return Practical19();
+                                      },
+                                    ),
+                                  );
+                                },
                                 child: Text(
                                   'Log in',
                                   style: TextStyle(
@@ -232,7 +242,6 @@ class _Practice17State extends State<Practice17> {
                               onPressed: () {},
                               child: GestureDetector(
                                 onTap: () {
-                                  Navigator.pop(context);
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
