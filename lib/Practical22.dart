@@ -29,6 +29,12 @@ class _Practical22State extends State<Practical22> {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
   ];
+  List<String> text22 = [
+    "New ",
+    "New ",
+    "Hot ",
+    "Hot ",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -44,62 +50,98 @@ class _Practical22State extends State<Practical22> {
           ),
         ),
       ),
-      body: SizedBox(
-        height: 700,
-        child: ListView.builder(
-          itemCount: 5,
-          itemBuilder: (context, Index) {
-            return Container(
-              margin: EdgeInsets.all(20),
-              height: 84,
-              width: double.infinity,
-              color: Colors.grey,
-              child: Column(
-                children: [
-                  Row(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 650,
+              child: ListView.builder(
+                itemCount: 5,
+                itemBuilder: (context, Index) {
+                  return Column(
                     children: [
                       Container(
-                        height: 70,
-                        width: 70,
-                        child: Image.asset(textstring[Index]),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          left: 16,
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        margin: EdgeInsets.all(20),
+                        height: 84,
+                        width: double.infinity,
+                        // color: Colors.grey,
+                        child: Row(
                           children: [
-                            Text(
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              text10[Index],
-                              style: TextStyle(
-                                  fontSize: 14,
-                                  fontFamily: "Poppins,",
-                                  fontWeight: FontWeight.bold),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                bottom: 14,
+                              ),
+                              child: Container(
+                                height: 70,
+                                width: 70,
+                                child: Image.asset(textstring[Index]),
+                              ),
                             ),
-                            SizedBox(
-                              height: 4,
-                            ),
-                            Text(
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              text20[Index],
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontFamily: "Poppins,",
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                left: 16,
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 249,
+                                    child: Text(
+                                      maxLines: 2,
+                                      overflow: TextOverflow.visible,
+                                      text10[Index],
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: "Poppins,",
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Container(
+                                    width: 249,
+                                    child: Text(
+                                      maxLines: 2,
+                                      overflow: TextOverflow.visible,
+                                      text20[Index],
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Poppins,",
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
                         ),
                       ),
+                      Divider(
+                        indent: 18,
+                        endIndent: 18,
+                      ),
                     ],
-                  ),
+                  );
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 47,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.home, size: 25),
+                  Icon(Icons.bookmark, size: 25),
+                  Icon(Icons.notifications, size: 25),
+                  Icon(Icons.person, size: 25),
                 ],
               ),
-            );
-          },
+            ),
+          ],
         ),
       ),
     );
