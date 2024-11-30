@@ -215,7 +215,7 @@ class _Practice17State extends State<Practice17> {
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) {
-                                        return Practical19();
+                                        return practical19();
                                       },
                                     ),
                                   );

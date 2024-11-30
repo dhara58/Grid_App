@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Practical21.dart';
 import 'package:flutter_application_1/Practical22.dart';
+import 'package:flutter_application_1/Practical24.dart';
 import 'package:flutter_application_1/PracticalG.dart';
+import 'package:flutter_application_1/Practicaltab.dart';
 import 'package:flutter_application_1/Practice14.dart';
 import 'package:flutter_application_1/practical19.dart';
 import 'package:flutter_application_1/practical20.dart';
@@ -21,7 +23,7 @@ import 'package:flutter_application_1/practice3.dart';
 import 'package:flutter_application_1/practice4.dart';
 import 'package:flutter_application_1/practice6.dart';
 import 'package:flutter_application_1/practice7.dart';
-import 'package:flutter_application_1/practice8.dart';
+import 'package:flutter_application_1/practiceM.dart';
 import 'package:flutter_application_1/practice9.dart';
 
 void main() {
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 118, 152, 255)),
         useMaterial3: true,
       ),
-      home: Practical22(),
+      home: Practicaltab(),
     );
   }
 }

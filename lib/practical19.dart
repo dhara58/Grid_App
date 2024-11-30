@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/practice17.dart';
-import 'package:flutter_application_1/practice18.dart';
-import 'package:flutter_application_1/practice8.dart';
+// import 'package:flutter_application_1/practice18.dart';
+import 'package:flutter_application_1/practiceM.dart';
 
-class Practical19 extends StatefulWidget {
-  const Practical19({super.key});
+class practical19 extends StatefulWidget {
+  const practical19({super.key});
 
   @override
-  State<Practical19> createState() => _Practical19State();
+  State<practical19> createState() => _Practical19State();
 }
 
-class _Practical19State extends State<Practical19> {
+class _Practical19State extends State<practical19> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -277,7 +277,7 @@ class _Practical19State extends State<Practical19> {
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return Practice8();
+                          return practiceM();
                         }));
                       },
                       child: Text(
